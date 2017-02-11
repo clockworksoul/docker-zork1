@@ -1,5 +1,4 @@
-# Zork I: The Great Underground Empire
-## (for Docker)
+# Zork I: The Great Underground Empire (for Docker)
 
 Want to play Zork? Easy-peasy. Just type the following:
 
