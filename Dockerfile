@@ -2,9 +2,28 @@ FROM clockworksoul/frotz
 
 MAINTAINER Matt Titmus <matthew.titmus@gmail.com>
 
-COPY zork1.zip .
+ENV STORY_ZIP zork1.zip
+ENV STORY_DAT ZORK1.DAT
 
-RUN unzip zork1.zip \
-   && rm zork1.zip
+COPY ${STORY_ZIP} story.zip
 
-ENTRYPOINT /usr/games/frotz DATA/ZORK1.DAT
+RUN unzip story.zip \
+   && rm story.zip
+
+# Make a nice, simply-placed save file directory
+# We'll need to take root form to manage this.
+#
+USER root
+
+RUN mkdir /save \
+   && chown frotz:frotz /save \
+   && chmod 775 /save
+
+# We need to run from here because Frotz drops treats the working directory
+# as the save directoy
+#
+WORKDIR /save
+
+CMD chgrp frotz /save \
+  && chmod 775 /save \
+  && sudo -u frotz /usr/games/frotz /home/frotz/DATA/${STORY_DAT}
