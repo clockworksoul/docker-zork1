@@ -1,5 +1,9 @@
 # Zork I: The Great Underground Empire (for Docker)
 
+Welcome to ZORK! You are about to experience a classic interactive fantasy, set in a magical universe. The ZORK trilogy takes place in the ruins of an ancient empire lying far underground. You, a dauntless treasure-hunter, are venturing into this dangerous land in search of wealth and adventure. Because each part of the ZORK saga is a completely independent story, you can explore them in any order. However, since ZORK I is the least difficult, it is usually the best place to begin.
+
+Many strange tales have been told of the fabulous treasures, exotic creatures and diabolical puzzles in the Great Underground Empire. As an aspiring adventurer you will undoubtedly want to locate the treasures and deposit them in your trophy case. You'd better equip yourself with a source of light (for the caverns are dark) and weapons (for some of the inhabitants are unfriendly - especially the thief, a skilled pickpocket and ruthless opponent.
+
 ## I just want to play the game!
 
 Want to play Zork? Easy-peasy. Just type the following:
