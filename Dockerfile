@@ -26,4 +26,4 @@ WORKDIR /save
 
 CMD chgrp frotz /save \
   && chmod 775 /save \
-  && sudo -u frotz /usr/games/frotz /home/frotz/DATA/${STORY_DAT}
+  && sudo -u frotz /usr/bin/frotz /home/frotz/DATA/${STORY_DAT}
