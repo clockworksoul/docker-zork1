@@ -3,7 +3,7 @@ FROM clockworksoul/frotz
 MAINTAINER Matt Titmus <matthew.titmus@gmail.com>
 
 ENV STORY_ZIP zork1.zip
-ENV STORY_DAT ZORK1.DAT
+ENV STORY_DAT DATA/ZORK1.DAT
 
 COPY ${STORY_ZIP} story.zip
 
@@ -26,4 +26,4 @@ WORKDIR /save
 
 CMD chgrp frotz /save \
   && chmod 775 /save \
-  && sudo -u frotz /usr/bin/frotz /home/frotz/DATA/${STORY_DAT}
+  && sudo -u frotz /usr/bin/frotz /home/frotz/${STORY_DAT}
